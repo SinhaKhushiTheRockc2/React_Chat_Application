@@ -1,0 +1,321 @@
+/*--------Chat Screen Styling---------------*/
+.chatScreen {
+  height: inherit;
+  width: 60%;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: relative;
+}
+
+/* ----------Navigation Bar Styling--------------- */
+.navigationBar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(114, 2, 114);
+  box-shadow: inset 3px 3px 3px #9449bc;
+  padding: 1.5%;
+  border-top-right-radius: 1rem;
+  justify-content: space-between;
+  height: 6.7rem;
+}
+
+.friendIconContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.friendIcon {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.friendName {
+  font-size: 0.8rem;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+.searchBarContainer {
+  background-color: rgb(219, 238, 255);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1%;
+  margin-right: 3%;
+  border-radius: 1rem;
+}
+
+.searchBarContainer input {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  margin-left: 1%;
+}
+
+.searchIcon {
+  font-size: 1rem;
+  color: grey;
+}
+
+/* -----------------Message Bar Styling-------------- */
+.messageBarContainer {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  box-shadow: 3px 3px 3px black;
+  border-bottom-right-radius: 1rem;
+  box-shadow: inset 0 0 12px rgb(146, 202, 251);
+}
+
+.messageBar {
+  width: 65%;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.messageOptionsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.selectEmoji {
+  font-size: 1.5rem;
+  color: rgb(113, 112, 112);
+  cursor: pointer;
+}
+
+.selectImage {
+  font-size: 1.5rem;
+  color: rgb(113, 112, 112);
+  cursor: pointer;
+}
+
+.sendBtn {
+  font-size: 1.5rem;
+  color: rgb(77, 1, 77);
+  cursor: pointer;
+}
+
+.emojiPicker {
+  position: absolute !important;
+  top: 19%;
+  right: 2%;
+}
+
+.fileInput{
+  display: none;
+}
+
+.fileLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+.fileIcon {
+  width: 2rem; 
+  height: 2rem; 
+  border-radius: 50%;
+  background-color: white;
+}
+
+.fileText {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: white; 
+  font-weight: bolder;
+}
+
+.fileLabel:hover .fileIcon {
+  opacity: 0.8;
+}
+/* ---------------Message panel styling-------------- */
+.messages {
+    box-shadow: 3px 3px 3px black;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* background-image: url("https://t3.ftcdn.net/jpg/01/99/79/88/360_F_199798806_PAFfWGapie6Mk8igqKHbhIIa9LwQcvQr.jpg"); */
+    background-image: url("https://i.pinimg.com/236x/96/ee/c4/96eec479c740357e48b6fa2db7954ff9.jpg");
+    height: calc(100% - 195px);
+    /* height: 27.5rem; */
+    box-shadow: inset 0 0 12px rgb(146, 202, 251);
+  }
+  
+  .messageContainer {
+    display: flex;
+    max-width: 60%;
+    padding: 0.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .messageContainer.sent {
+    justify-content: flex-end;
+    color: black;
+  }
+  
+  .messageContainer.received {
+    justify-content: flex-start;
+    color: black;
+  }
+
+  .messageInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 0.5rem;
+  }
+  
+  .userIcon {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+  }
+  
+  .messageContent {
+    max-width: 100%;
+  }
+  
+  .messageContent p {
+    background-color: hsl(241, 88%, 61%);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 10px 10px 10px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    margin: 0;
+  }
+  
+  .timespan{
+    font-weight: bolder;
+  }
+  
+  /* Scrollbar styling */
+  .messages::-webkit-scrollbar{
+    width: 8px;
+  }
+
+  .messages::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 0, 128, 0.508);
+    border-radius: 4px; 
+}
+
+.messages::-webkit-scrollbar-track {
+    background-color: rgb(221, 238, 254);
+}
+  /* Sent messages */
+  .messageContainer.sent {
+    align-self: flex-end;
+  }
+  
+  .messageContainer.sent .messageContent p {
+    border-radius: 10px 10px 0 10px;
+    background-color: hsl(141, 53%, 53%);
+  }
+  
+  /* Received messages */
+  .messageContainer.received {
+    align-self: flex-start;
+  }
+  
+  .messageContainer.received .messageContent p {
+    border-radius: 10px 10px 10px 0;
+  }
+  
+  /* ----------Responsive Styling---------- */
+  @media  screen and (max-width:1000px) {
+    /* .chatScreen{
+      width: 80%;
+    } */
+
+    .messages{
+      height: 72%;
+    }
+
+    .navigationBar{
+      display: block;
+      /* height: 7rem; */
+    }
+
+    .friendIconContainer{
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .searchBarContainer{
+      overflow: hidden;
+    }
+
+    .selectEmoji{
+      font-size: 0.8rem;
+    }
+
+    .selectImage{
+      font-size: 0.8rem;
+    }
+
+    .sendBtn{
+      font-size: 0.8rem;
+    }
+
+    .messageBar{
+      font-size: 0.9rem;
+    }
+  }
+  @media (max-width: 768px) {
+    /* .messages {
+      padding: 0.5rem;
+      height: calc(100% - 190px);
+    } */
+
+    .messageContainer {
+      max-width: 80%;
+      padding: 0.5rem;
+    }
+  
+    .userIcon {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  
+    .messageContent p {
+      padding: 0.5rem 0.75rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* .messages {
+      padding: 0.2rem;
+      height: calc(100% - 157px);
+    } */
+  
+    .messageContainer {
+      max-width: 100%;
+      padding: 0.3rem;
+    }
+  
+    .userIcon {
+      height: 2rem;
+      width: 2rem;
+    }
+  
+    .messageContent p {
+      padding: 0.4rem 0.5rem;
+    }
+  }
+  

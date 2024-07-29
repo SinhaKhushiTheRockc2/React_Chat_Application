@@ -1,0 +1,43 @@
+/*------------- Error Page Styling----------- */
+.parentErrorContainer{
+    background-color: black;
+    padding: 2%;
+    height: 91.5vh;
+}
+
+.errorTitle{
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.errorImageContainer{
+    background-color: rgba(0, 0, 255, 0.537);
+    width: 30%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 50%;
+    transition: 3s ease-in-out;
+    animation: circularMotion 5s infinite ease-in-out;
+    margin-bottom: 3%;
+}
+
+.errorImage{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/* Defining animation */
+@keyframes circularMotion {
+    from{
+        transform: rotate(0deg);
+        box-shadow: inset 0 0 100px rgb(63, 63, 63);
+    }
+    to{
+        transform: rotate(360deg);
+        box-shadow: inset 0 0 100px rgb(29, 29, 29);
+    }
+}

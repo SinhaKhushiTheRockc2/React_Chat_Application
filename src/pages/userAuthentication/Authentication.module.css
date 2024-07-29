@@ -1,0 +1,176 @@
+/* ------------Form Styling--------------- */
+.formContainer{
+    padding-top: 5%;
+}
+
+.formWrapper{
+    padding: 2%;
+    background-color: #211f20ae;
+    width: 30%;
+    margin: auto;
+    border-radius: 0.8rem;
+    box-shadow:inset 0px 0px 20px rgb(247, 177, 177);
+    border: 0.6px solid rgba(248, 119, 119, 0.345);
+    backdrop-filter: blur(20px) saturate(177%);
+}
+
+.title{
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 4%;
+}
+
+.authForm{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+
+.authForm input{
+    font-size: 1rem;
+    margin-bottom: 3%;
+    padding: 3%;
+    border:none;
+    border-bottom: 0.5px solid rgb(139, 138, 138);
+    width: 100%;
+    background-color: inherit;
+    color: white;
+    font-weight: bolder;
+}
+
+.authForm input::placeholder{
+    color: rgb(231, 216, 216);
+}
+
+.authForm input:focus{
+    outline: none;
+}
+
+.viewIcon{
+    height: 1rem;
+    width: 1rem;
+    margin-left:-8%;
+    border-radius: 50%;
+    color: white;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.viewIcon:hover{
+    transform: scale(1.5);
+    transition: 0.4s ease-in-out;
+    box-shadow: 3px 3px 3px rgb(46, 46, 46);
+}
+
+.submitBtn{
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: black;
+    background-color: rgba(230, 56, 56, 0.985);
+    padding: 2%;
+    /* border-radius: 0.4rem; */
+    border: none;
+    cursor: pointer;
+    margin-left: 3%;
+    transform: scale(1.1);
+    margin-top: 2%
+}
+
+.submitBtn:hover{
+    background-color: rgba(184, 43, 43, 0.985);
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+    color: white;
+}
+
+.passwordField{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headPrimary{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* ----------Add Profile Styling---------------- */
+.fileInput{
+    display: none;
+}
+
+.fileLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.fileIcon {
+    width: 2rem; 
+    height: 2rem; 
+    border-radius: 50%;
+    background-color: white;
+}
+
+.fileText {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white; 
+    font-weight: bolder;
+}
+
+.fileLabel:hover .fileIcon {
+    opacity: 0.8;
+}
+
+.navigationLink{
+    font-size: 1rem;
+    text-align: center;
+    color: beige;
+}
+
+a{
+    color:whitesmoke;
+}
+
+/* -------------------Profile Styling------------------- */
+.profileIcon{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    padding: 4%;
+    border-color: 3px solid blue;
+}
+
+.profileContainer{
+    padding: 2%;
+    background-color: #211f20ae;
+    width: 30%;
+    margin: auto;
+    border-radius: 0.8rem;
+    box-shadow:inset 0px 0px 20px rgb(247, 177, 177);
+    border: 0.6px solid rgba(248, 119, 119, 0.345);
+    backdrop-filter: blur(20px) saturate(177%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileName{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+}
+/*---------------Responsive styling--------- */
+@media screen and (max-width:1000px) {
+    .formWrapper{
+        width: 80%;
+    }
+}

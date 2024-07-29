@@ -1,0 +1,217 @@
+/* ---------Side Bar Styling--------- */
+.sideBar{
+    background-color:#e0c9ef;
+    width: 40%;
+    /* margin-left: 15%; */
+    height: inherit;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    overflow: hidden;
+    border: 1px solid gray;
+    box-shadow: inset 0 0 12px purple;
+    position: relative;
+}
+
+
+/* --------Navbar Styling------------- */
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(114, 2, 114);
+    box-shadow: inset 3px 3px 3px #9449bc;
+    border-top-left-radius: 1rem;
+    padding: 2.4%;
+    justify-content: space-between;
+}
+
+.userIconContainer{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.userIcon{
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    border:3px solid white;
+    box-shadow: 3px 3px 3px black;
+}
+
+.userName{
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: rgb(237, 235, 235);
+    margin-left: 25%;
+}
+
+.logoutBtn{
+    font-size: 0.8rem;
+    width: 20%;
+    padding: 2%;
+    background-color:orangered;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px black;
+}
+
+.logoutBtn:hover{
+    transform: scale(0.9);
+    transition: 0.4s ease-in-out;
+    box-shadow: 3px 3px 3px black;
+    background-color: rgb(233, 66, 6);
+}
+
+.chatLogo{
+    font-size: 2.7rem;
+    color: white;
+}
+
+/* ----------------Search Bar------------------ */
+.searchBarContainer{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0.5px solid rgb(219, 219, 219);
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 1.5rem;
+    padding: 2%;
+}
+
+.searchBar{
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 1%;
+    background-color: inherit;
+    margin-left: 1%;
+}
+
+.searchIcon {
+    color: rgb(136, 136, 136);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+/* -------------------Searched User Styling-------------- */
+.userChat{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    background-color: white;
+    width: 80%;
+    position: absolute;
+    left: 8%;
+    z-index: 100;
+    top: 28%;
+    cursor: pointer;
+}
+
+.userChat img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+/* ----------------FriendList Styling------------------- */
+.parentFriendListContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    overflow-y: auto;
+    height: calc(80vh - 12rem);
+}
+
+.parentFriendListContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.parentFriendListContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(140, 195, 243);
+    border-radius: 4px; 
+}
+
+.parentFriendListContainer::-webkit-scrollbar-track {
+    background-color: rgb(221, 238, 254);
+}
+
+.friendDisplayPicture{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px black;
+}
+
+.chatContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3%;
+    cursor: pointer;
+}
+
+.chatContainer:hover{
+    background-color: #b485cb;
+}
+
+.latestChatDisplay{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+    padding: 2%;
+    border-bottom: 1px solid #b485cb;
+}
+
+
+.friendTitle{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: rgb(68, 68, 68);
+}
+
+.latestChat{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(57, 57, 57);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width:1000px) {
+    .sideBar{
+        margin-left: 1%;
+        width: 40%;
+    }
+    .navbar{
+        display: block;
+    }
+    .chatLogo{display: none;}
+    .userIconContainer{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logoutBtn{
+        width: 100%;
+    }
+    .friendTitle{
+        font-size: 0.8rem;
+    }
+    .friendDisplayPicture{
+        height: 3rem;
+        width: 3rem;
+    }
+}
