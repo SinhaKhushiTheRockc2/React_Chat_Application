@@ -2,7 +2,7 @@
 Developed a Chat Application using React.
 
 ## Hosted Link:
-### 
+### https://sinhakhushitherockc2.github.io/React_Chat_Application/
 
 ## Features:
 * Signup using email, password and optionally add profile picture.
@@ -83,7 +83,7 @@ Follow these steps to get the project up and running on your local system:
 
 1. Clone the repository to your local machine:
 ```bash
-  
+    https://github.com/SinhaKhushiTheRockc2/React_Chat_Application
 ```
 2. Navigate to the root directory of the project:
 
