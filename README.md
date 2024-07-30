@@ -28,6 +28,7 @@ https://youtu.be/9YZJ4TLXhWw
 * Javascript
 * CSS
 * React-Toastify
+* React Hooks
 
 ## Folder Structure:
 ```bash
