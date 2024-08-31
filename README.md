@@ -1,4 +1,4 @@
-# Contact-List-React-App
+# React-Chat-Application 
 Developed a Chat Application using React.
 
 ## Hosted Link:
